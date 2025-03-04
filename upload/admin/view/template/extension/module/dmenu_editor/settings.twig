@@ -1,0 +1,30 @@
+<div class="settings_container">
+    <div class="settings_sidebar">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab-settings_general" data-toggle="tab">{{ tab_settings_general }}</a></li>
+            <li><a href="#tab-settings_menu" data-toggle="tab">{{ tab_menu_general }}</a></li>
+        </ul>
+    </div>
+
+    <div class="settings_content">
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab-settings_general">{{ settings_general }}</div>
+
+            <div class="tab-pane" id="tab-settings_menu">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#tab-setting_menu_main" data-toggle="tab">{{ tab_menu_main }}</a></li>
+                    <li><a href="#tab-setting_menu_top" data-toggle="tab">{{ tab_menu_top }}</a></li>
+                    <li><a href="#tab-setting_menu_footer" data-toggle="tab">{{ tab_menu_footer }}</a></li>
+                    <li><a href="#tab-setting_menu_social" data-toggle="tab">{{ tab_menu_social }}</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab-setting_menu_main">{{ settings_menu_main }}</div>
+                    <div class="tab-pane" id="tab-setting_menu_top">{{ settings_menu_top }}</div>
+                    <div class="tab-pane" id="tab-setting_menu_footer">{{ settings_menu_footer }}</div>
+                    <div class="tab-pane" id="tab-setting_menu_social">{{ settings_menu_social }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

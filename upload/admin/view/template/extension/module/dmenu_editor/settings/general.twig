@@ -1,0 +1,33 @@
+<div class="form-group" style="margin: 0;">
+    <label class="col-sm-3 control-label" for="module_dmenu_editor-status">{{ entry_status }}</label>
+    <div class="col-sm-9">
+        <select name="module_dmenu_editor_status" id="module_dmenu_editor-status" class="form-control">
+            {% if module_dmenu_editor_status %}
+                <option value="1" selected="selected">{{ text_enabled }}</option>
+                <option value="0">{{ text_disabled }}</option>
+            {% else %}
+                <option value="1">{{ text_enabled }}</option>
+                <option value="0" selected="selected">{{ text_disabled }}</option>
+            {% endif %}
+        </select>
+    </div>
+</div>
+
+<div class="form-group" style="background-color: #ededed; margin: 20px 0 0;">
+    <label class="col-sm-3 control-label" style="font-size: 1.2em;">{{ entry_dev_block }}</label>
+</div>
+
+<div class="form-group setting-ocstore_blog" style="background-color: #ededed; margin: 0;">
+    <label class="col-sm-3 control-label" for="module_dmenu_editor-ocstore_blog">{{ entry_ocstore_blog }}</label>
+    <div class="col-sm-9">
+        <select name="module_dmenu_editor_settings[general][ocstore_blog]" id="module_dmenu_editor-ocstore_blog" class="form-control">
+            {% if module_settings['general']['ocstore_blog'] %}
+                <option value="0">{{ text_disabled }}</option>
+                <option value="1" selected="selected">{{ text_enabled }}</option>
+            {% else %}
+                <option value="0" selected="selected">{{ text_disabled }}</option>
+                <option value="1">{{ text_enabled }}</option>
+            {% endif %}
+        </select>
+    </div>
+</div>
